@@ -1,0 +1,11 @@
+<h2>{{master}} controls {{heroes.length}} heroes</h2>
+    <app-hero-child *ngFor="let hero of heroes"
+      [hero]="hero"
+      [x]="master">
+    </app-hero-child>
+
+
+    <h3>Countdown to Liftoff (via ViewChild)</h3>
+  <button (click)="start()">Start</button>
+  <button (click)="stop()">Stop</button>
+  <p>{{seconds()}}</p>
